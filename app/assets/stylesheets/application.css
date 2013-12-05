@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+
+.customers .actions
+{
+  float: right;
+}
+
+.customers
+{
+  box-shadow: 5px 5px 5px black;
+  margin: 7px;
+  border: 2px solid black;
+  width: 400px;
+  height: 700px;
+  display: inline;
+  float: left;
+  overflow: auto;
+}
+
+img
+{
+  width: 350px;
+  height: 400px;
+}

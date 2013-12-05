@@ -1,6 +1,9 @@
 UltimateChallenge6Crm::Application.routes.draw do
   resources :customers
 
+  root :to => 'finder#index'
+  
+  match '/missing_email' => 'finder#missing_email', :as => :missing_email, :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

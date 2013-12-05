@@ -19,7 +19,19 @@
     <b>Phone: </b>
     <%= customer.phone_number  %>
   </p>
-   <p>
+  <p>
+    <b>Email: </b>
+    <%= customer.email_address  %>
+  </p>
+  <p>
+    <b>Province: </b>
+    <% if customer.province.nil? %>
+      None
+    <% else %>
+      <%= customer.province.name  %>
+    <% end %>
+  </p>
+  <p>
     <b>Notes: </b>
     <%= customer.notes %>
   </p>
